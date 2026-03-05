@@ -1,70 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MELBECKS - Barra de Snacks</title>
+<title>MELBECKS</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
-background:#fff5f0;
+font-family:Arial;
+background:white;
 text-align:center;
-}
-
-header{
-background:#ff3c3c;
-color:white;
-padding:60px 20px;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
 }
 
 .logo{
-width:200px;
+width:250px;
 margin-bottom:20px;
 }
 
-section{
-padding:60px 20px;
-}
-
-h2{
-color:#ff3c3c;
+p{
+font-size:20px;
+max-width:600px;
 }
 
 .button{
-background:#ff3c3c;
-color:white;
-padding:15px 25px;
-text-decoration:none;
+padding:15px 30px;
 border-radius:30px;
-display:inline-block;
+text-decoration:none;
 margin:10px;
+display:inline-block;
 font-weight:bold;
+color:#333;
+transition:0.3s;
 }
 
-.card{
-background:white;
-margin:20px auto;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-max-width:800px;
-text-align:left;
-}
+/* COLORES PASTEL */
 
-ul{
-columns:2;
-}
+.rosa{background:#ffd6e7;}
+.azul{background:#d6ecff;}
+.verde{background:#d6ffd9;}
+.amarillo{background:#fff4cc;}
+.morado{background:#e6d6ff;}
 
-footer{
-background:#333;
-color:white;
-padding:20px;
-margin-top:40px;
+/* EFECTO AL PASAR EL MOUSE */
+
+.button:hover{
+transform:scale(1.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 </style>
@@ -72,8 +62,6 @@ margin-top:40px;
 </head>
 
 <body>
-
-<header>
 
 <img src="melbecks.png" class="logo">
 
@@ -86,157 +74,13 @@ pensada para consentir a tus invitados y hacer tu celebración más agradable. �
 
 <br>
 
-<a href="#barra" class="button">Barra de Snacks</a>
-<a href="#fotos" class="button">📸 Fotos</a>
-<a href="#precios" class="button">💲 Precios</a>
-<a href="#ingredientes" class="button">🌶 Ingredientes</a>
+<a href="incluye.html" class="button morado">Incluye</a>
 
-</header>
+<a href="ingredientes.html" class="button amarillo">Ingredientes</a>
 
+<a href="precios.html" class="button verde">Precios</a>
 
-<section id="barra">
-
-<h2>Barra de Snacks para Eventos</h2>
-
-<div class="card">
-
-<h3>🎉 Incluye</h3>
-
-<ul>
-
-<li>2 horas de servicio</li>
-<li>4 bases a elegir</li>
-<li>7 complementos a elegir</li>
-<li>Salsas incluidas</li>
-<li>Clamato</li>
-<li>Vasos y desechables</li>
-<li>Personal para atender el evento</li>
-
-</ul>
-
-</div>
-
-</section>
-
-
-<section id="ingredientes">
-
-<h2>Ingredientes</h2>
-
-<div class="card">
-
-<h3>🍟 Bases</h3>
-
-<ul>
-
-<li>Tostitos</li>
-<li>Tostitos Flaming Hot</li>
-<li>Takis Fuego</li>
-<li>Doritos Nacho</li>
-<li>Doritos Flaming Hot</li>
-<li>Ruffles</li>
-<li>Sabritas Original</li>
-<li>Sabritas Adobadas</li>
-<li>Chips Jalapeño</li>
-<li>Chips Fuego</li>
-<li>Fritos</li>
-<li>Cheetos</li>
-<li>Cheetos Flaming Hot</li>
-<li>Churrumais</li>
-<li>Sabritones</li>
-<li>Rancheritos</li>
-<li>Poffets</li>
-
-</ul>
-
-</div>
-
-
-<div class="card">
-
-<h3>🍭 Toppings / Complementos</h3>
-
-<ul>
-
-<li>Gomitas</li>
-<li>Gusanitos (con o sin azúcar)</li>
-<li>Aritos</li>
-<li>Ositos</li>
-<li>Sandías</li>
-<li>Manguitos</li>
-<li>Duraznos</li>
-<li>Tiburones</li>
-<li>Gomitas enchiladas</li>
-<li>Pulparindo</li>
-<li>Pelón Pelo Rico</li>
-<li>Tarugo de Tamarindo</li>
-<li>Serpentina</li>
-<li>Lucas</li>
-<li>Miguelito</li>
-<li>Rockaleta en trozos</li>
-<li>Picafresa</li>
-<li>Skwinkles</li>
-<li>Rielitos</li>
-<li>Pepino</li>
-<li>Cueritos</li>
-<li>Cacahuate Japonés</li>
-
-</ul>
-
-</div>
-
-</section>
-
-
-<section id="fotos">
-
-<h2>Galería</h2>
-
-<div class="card">
-
-<p>Aquí podrás agregar fotos reales de tus eventos.</p>
-
-</div>
-
-</section>
-
-
-<section id="precios">
-
-<h2>Precios del Mes</h2>
-
-<div class="card">
-
-<h3>Paquete Básico</h3>
-<p>Desde $2,500</p>
-
-</div>
-
-<div class="card">
-
-<h3>Paquete Intermedio</h3>
-<p>Desde $4,000</p>
-
-</div>
-
-<div class="card">
-
-<h3>Paquete Premium</h3>
-<p>Desde $6,500</p>
-
-</div>
-
-<p style="color:red;">*Precios sujetos a cambio mensual.</p>
-
-</section>
-
-
-<footer>
-
-<p>✨ MELBECKS - Barra de Snacks ✨</p>
-
-</footer>
-
+<a href="fotos.html" class="button azul">Fotos</a>
 
 </body>
 </html>
